@@ -630,7 +630,7 @@ if ( ! function_exists( 'orchid_store_woocommerce_title_breadcrumb_action' ) ) {
 		} elseif ( orchid_store_get_option( 'display_page_header' ) ) {
 			?>
 			<div
-				class="os-breadcrumb-wrap"
+				class="os-breadcrumb-wrap hello"
 				<?php
 				if ( has_header_image() ) {
 					?>

@@ -587,9 +587,11 @@ if ( ! function_exists( 'orchid_store_title_breadcrumb_action' ) ) {
 
 		if ( orchid_store_get_option( 'display_page_header' ) ) {
 			?>
-			<div class="os-breadcrumb-wrap" 
+			<div class="os-breadcrumb-wrap"
 			<?php
 			if ( has_header_image() ) {
+                echo "<pre>";
+                var_dump(123);
 				?>
 				style="background-image: url(<?php header_image(); ?>);" <?php } ?>>
 				<div class="__os-container__">
@@ -619,6 +621,8 @@ if ( ! function_exists( 'orchid_store_title_breadcrumb_action' ) ) {
 			</div><!-- .os-breadcrumb-wrap -->
 			<?php
 		} else {
+            echo "<pre>";
+            var_dump(456);
 			if ( orchid_store_get_option( 'display_breadcrumb' ) ) {
 				?>
 				<div class="os-page-breadcrumb-wrap">
