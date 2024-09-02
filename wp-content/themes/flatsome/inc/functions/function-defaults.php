@@ -1,8 +1,9 @@
 <?php
 
 // Set Default Flatsome Options
-if(!function_exists('flatsome_defaults')){
-  function flatsome_defaults($option) {
+if (!function_exists('flatsome_defaults')) {
+  function flatsome_defaults($option)
+  {
     $df = array(
       // Blog
       'blog_layout' => 'right-sidebar',
@@ -40,7 +41,7 @@ if(!function_exists('flatsome_defaults')){
       'nav_style_top' => 'divided',
       'topbar_left' => '<strong class="uppercase">Add anything here or just remove it...</strong>',
       'account_login_style' => 'lightbox',
-      'social_icons' => array('facebook','twitter','email','linkedin','pinterest','whatsapp'),
+      'social_icons' => array('facebook', 'twitter', 'email', 'linkedin', 'pinterest', 'whatsapp'),
       'social_icons_style' => 'outline',
       'nav_uppercase' => 1,
       'blog_badge_style' => 'outline',
@@ -60,7 +61,7 @@ if(!function_exists('flatsome_defaults')){
       'disable_quick_view' => 0,
       'product_box_rating' => 1,
       'product_box_category' => 1,
-      'site_logo' => get_template_directory_uri().'/assets/img/logo.png',
+      'site_logo' => get_template_directory_uri() . '/assets/img/logo.png',
       'mobile_overlay' => 'left',
       'topbar_align' => 'left',
       'top_right_text' => '',
@@ -82,7 +83,7 @@ if(!function_exists('flatsome_defaults')){
       'header_bg_img' => '',
       'header_bg_img_repeat' => 'repeat-x',
       'nav_style_main' => 'nav-uppercase',
-      'google_map_api' => 'AIzaSyCnQHEUD4Yvg4m1ul3PWUwsjctR1Cl2NFc',
+      'google_map_api' => '',
       'nav_size' => '',
       'nav_spacing' => '',
       'deparments_menu_label' => 'Departments',
@@ -115,10 +116,10 @@ if(!function_exists('flatsome_defaults')){
       'contact_icon_size' => '16px',
       'contact_phone' => '+47 900 99 000',
       'contact_email' => 'youremail@gmail.com',
-      'type_headings' => array('font-family'=> 'Lato','variant' => '700'),
-      'type_texts' => array('font-family'=> 'Lato','variant' => 'regular'),
-      'type_nav' => array('font-family'=> 'Lato','variant' => '700'),
-      'type_alt' => array('font-family'=> 'Dancing Script','variant' => 'regular'),
+      'type_headings' => array('font-family' => 'Lato', 'variant' => '700'),
+      'type_texts' => array('font-family' => 'Lato', 'variant' => 'regular'),
+      'type_nav' => array('font-family' => 'Lato', 'variant' => '700'),
+      'type_alt' => array('font-family' => 'Dancing Script', 'variant' => 'regular'),
       'nav_uppercase_bottom' => 1,
       'breadcrumb_title_pos' => 'left',
       'breadcrumb_nav_pos' => 'right',
@@ -132,10 +133,10 @@ if(!function_exists('flatsome_defaults')){
       'footer_2_columns' => '4',
       'footer_bottom_text' => 'dark',
       'lazy_load_scripts' => 0,
-      'payment_icons' => array('visa','paypal','stripe','mastercard','cashondelivery'),
+      'payment_icons' => array('visa', 'paypal', 'stripe', 'mastercard', 'cashondelivery'),
     );
 
     // Return default option if not empty
-    if(!empty($df[$option])) return $df[$option];
+    if (!empty($df[$option])) return $df[$option];
   };
 }
